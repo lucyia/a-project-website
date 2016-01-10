@@ -19,7 +19,9 @@ gulp.task('less', function () {
 gulp.task('scripts', function() {
 	return gulp.src([
 		'./bower_components/jquery/dist/jquery.min.js',
-		'./bower_components/bootstrap/js/collapse.js'	
+		'./bower_components/bootstrap/dist/js/bootstrap.min.js',
+		'./bower_components/bootstrap/js/collapse.js',
+		'./assets/js/functions.js'
 		])
 	.pipe(concat('scripts.js'))
 	.pipe(gulp.dest('../public'))
