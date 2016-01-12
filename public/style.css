@@ -254,8 +254,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('../bower_components/bootstrap/fonts/glyphicons-halflings-regular.eot');
-  src: url('../bower_components/bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../bower_components/bootstrap/fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../bower_components/bootstrap/fonts/glyphicons-halflings-regular.woff') format('woff'), url('../bower_components/bootstrap/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../bower_components/bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('../public/fonts/glyphicons-halflings-regular.eot');
+  src: url('../public/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../public/fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../public/fonts/glyphicons-halflings-regular.woff') format('woff'), url('../public/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../public/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
   position: relative;
@@ -6724,13 +6724,9 @@ button.close {
     display: none !important;
   }
 }
-body {
-  position: relative;
-  padding-top: 50px;
-}
 .navbar-brand > img {
-  width: 60px;
-  margin-top: -10px;
+  width: 70px;
+  margin-top: -8px;
 }
 .lang-bar {
   font-size: 12px;
@@ -6745,16 +6741,6 @@ body {
 ul.navbar-nav > li:hover {
   border-bottom: 5px solid grey;
 }
-.carousel {
-  margin-bottom: 0px;
-}
-.carousel .carousel-control > .glyphicon {
-  top: 90%;
-}
-.carousel .carousel-inner > .item > img {
-  top: -220px !important;
-  height: auto !important;
-}
 #outcome-link,
 #outcome-dropdown {
   float: left;
@@ -6765,4 +6751,60 @@ ul.navbar-nav > li:hover {
 #outcome-dropdown {
   margin-left: 0;
   padding-left: 5px;
+}
+body {
+  position: relative;
+  padding-top: 50px;
+}
+.row {
+  padding: 50px 10%;
+}
+#about {
+  background-color: #0A5691;
+  color: white;
+}
+#goals {
+  background-color: #BECCD6;
+}
+#partners {
+  background-color: #245D61;
+  color: white;
+}
+#support {
+  background-color: #ffffff;
+  text-align: center;
+}
+#support h2 {
+  color: grey;
+}
+#support > .col-md-6 {
+  margin: 0 auto;
+  padding-top: 50px;
+}
+#support .support-cz {
+  width: 200px;
+  height: auto;
+}
+#support .support-no {
+  width: 150px;
+  height: auto;
+}
+#contact {
+  background-color: #DADADA;
+}
+.carousel {
+  margin-bottom: 0px;
+}
+.carousel .carousel-control > .glyphicon {
+  top: 90%;
+}
+.carousel .carousel-inner > .item > img {
+  top: -220px !important;
+  height: auto !important;
+}
+.footer-content {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px;
 }
