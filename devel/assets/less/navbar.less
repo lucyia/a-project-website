@@ -1,6 +1,13 @@
-.navbar-brand>img {
-    width: 70px;
-    margin-top: -8px;
+.navbar-default{
+	background-color: rgba(255, 255, 255, 0.8);
+	border: none;
+}
+
+.navbar-brand {
+	.navbar-logo {
+		height: 80px;
+		margin-top: -15px;	    
+	}
 }
 
 .lang-bar{
@@ -11,15 +18,32 @@
 	}
 }
 
-.navbar-nav{
-	.active{
-		background-color: transparent;
-		border-bottom: 5px solid grey;
+.navbar-default .navbar-nav{
+	& > li {
+		a, a:hover, a:focus{
+			color: @logo-blue;		
+		}
+		a{
+			border-bottom: 5px solid transparent;
+		}
+		a:hover, a:focus{			
+			border-color: @logo-red;	
+		}
 	}
-}
-ul.navbar-nav>li{
-	&:hover{
-		border-bottom: 5px solid grey;
+
+	.active{		
+		a, a:hover, a:focus{
+			background-color: transparent;
+			color: @logo-blue;
+			border-color: @logo-red;
+		}
+	}
+
+	.open{
+		a, a:hover, a:focus{
+			background-color: transparent;
+			color: @logo-blue;
+		}
 	}
 }
 
